@@ -12,14 +12,16 @@ import com.rest.model.Ticket;
 
 /**
  * This is root resource class
+ * 
  * @author Ashok
  *
  */
 @Path("/erail/")
 public class TicketResource {
-	
+
 	/**
 	 * This method is used to get Ticket details
+	 * 
 	 * @param pnr
 	 * @return
 	 */
@@ -41,9 +43,9 @@ public class TicketResource {
 		return t;
 	}
 
-	
 	/**
 	 * This method is used to get Ticket status
+	 * 
 	 * @param pnr
 	 * @return
 	 */
@@ -56,6 +58,7 @@ public class TicketResource {
 
 	/**
 	 * This method is used to book ticket
+	 * 
 	 * @param pinfo
 	 * @return
 	 */

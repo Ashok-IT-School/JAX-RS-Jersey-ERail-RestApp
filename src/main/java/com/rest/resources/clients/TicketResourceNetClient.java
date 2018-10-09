@@ -20,8 +20,8 @@ import com.rest.model.Ticket;
 public class TicketResourceNetClient {
 
 	public static void main(String[] args) throws Exception {
-		// getTicketDetails();
-		bookTrainTicket();
+		 getTicketDetails();
+		//bookTrainTicket();
 	}
 
 	/**
@@ -48,7 +48,7 @@ public class TicketResourceNetClient {
 		// convert java to json
 		ObjectMapper mapper = new ObjectMapper();
 		String passengerJson = mapper.writeValueAsString(pinfo);
-		System.out.println(passengerJson);
+		//System.out.println(passengerJson);
 
 		// send post request to ticket resource
 		URL url = new URL(path);

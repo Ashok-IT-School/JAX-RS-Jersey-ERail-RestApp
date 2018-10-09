@@ -92,8 +92,10 @@ public class TicketResourceHttpClient {
 		// Resource path
 		String path = "http://localhost:8086/JAX-RS-Jersey-ERail-RestApp/api/erail/ticket/102";
 
-		// Preparing HttpClient with GET Request
+		// Preparing HttpClient to send request
 		DefaultHttpClient httpClient = new DefaultHttpClient();
+		
+		//Creating GET request object
 		HttpGet getRequest = new HttpGet(path);
 
 		// Setting accept format (response format)
